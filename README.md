@@ -23,3 +23,18 @@ python main.py
 - `Esc`: pause
 
 Collect every shard if you want the cleanest finish, or just explore and make it to the beacon.
+
+## iPhone Safari prototype
+
+The Godot 4 mobile port lives in `mobile/` and uses the existing art and music.
+It targets the Compatibility renderer, landscape play, and a single-threaded web
+export for iPhone Safari.
+
+```powershell
+godot --editor project.godot
+godot --headless --export-release Web dist/index.html
+```
+
+Touch controls use a virtual stick on the left, drag-to-look on the right, and a
+large jump button. Push the stick fully to sprint. The opening tap unlocks audio
+on Safari.
